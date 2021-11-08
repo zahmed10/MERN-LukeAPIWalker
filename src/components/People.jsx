@@ -20,7 +20,11 @@ const People = (props) => {
     return (
         person.error ? <p>{person.error}</p> :
         <div>
-            <p>person: {person.name}</p> 
+            <p>{person.name}</p> 
+            <p>Height: {person.height} cm</p>
+            <p>Mass: {person.mass} kg</p>
+            <p>Hair color: {person.hair_color}</p>
+            <p>Skin color: {person.skin_color}</p>
         </div>
     );
 }
